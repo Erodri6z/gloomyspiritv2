@@ -7,10 +7,11 @@ import Other from "../../assets/bottles/Other.png"
 
 
 const SpiritsResults = (props) => {
+  let s = props.spirit
   
   return (
     <>
-    <img src={props.spirit} alt="spirit" />
+    <img src={s} alt="spirit" />
     <div>
       <h4>heres the spirit</h4>
     </div>
