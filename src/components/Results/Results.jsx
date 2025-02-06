@@ -9,7 +9,7 @@ const Results = () => {
     {
       name: "Martini",
       image: Martini,
-      color: "clear"
+      color: "off-white"
     },{
       name: "Old Fasioned",
       image: Rocks,
@@ -25,18 +25,20 @@ const Results = () => {
     }
   ]
 
+  // console.log(fakeDrinks[1].color.replaceAll('"', ''))
+
   return (
     <>
     <div>
-      {fakeDrinks.map(d => {
-        <div>
-          <img src={d.image} alt="drink" background-color={d.color} />
-          <h3>d.name</h3>
+      {fakeDrinks.map(d => 
+        <div key={d.name} style={{ backgroundColor : d.color }}>
+          <img src={d.image} alt="drink" />
+          <h3>{d.name}</h3>
         </div>
-      })}
-
+      )}
     </div>
     </>
   )
 }
 
+export default Results
