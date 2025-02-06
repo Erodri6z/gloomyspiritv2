@@ -1,0 +1,9 @@
+.bottle-interface{
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.bottle{
+  max-width: 200px;
+  position: relative;
+}
