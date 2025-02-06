@@ -1,0 +1,13 @@
+.drink-name{
+  color: black;
+}
+
+.drink-card{
+  background: white;
+  border: 10px solid white;
+  margin: 2px;
+}
+
+.thumbnail{
+  border: 2px solid black;
+}

@@ -3,13 +3,13 @@ import Coupe from "./../../assets/defaultcups/Coupe Glass.png"
 import Marg from "./../../assets/defaultcups/Margarita Glass.png"
 import Martini from "./../../assets/defaultcups/Martini Glass.png"
 import Rocks from "./../../assets/defaultcups/Rocks Glass.png"
-
+import "./Results.css"
 const Results = () => {
   const fakeDrinks = [
     {
       name: "Martini",
       image: Martini,
-      color: "off-white"
+      color: "white"
     },{
       name: "Old Fasioned",
       image: Rocks,
@@ -17,7 +17,7 @@ const Results = () => {
     },{
       name: "Margarita",
       image: Marg,
-      color: "green"
+      color: "yellow"
     },{
       name: "Daquiri",
       image: Coupe,
@@ -31,9 +31,9 @@ const Results = () => {
     <>
     <div>
       {fakeDrinks.map(d => 
-        <div key={d.name} style={{ backgroundColor : d.color }}>
-          <img src={d.image} alt="drink" />
-          <h3>{d.name}</h3>
+        <div key={d.name} className="drink-card" >
+          <img src={d.image} alt="drink" style={{ backgroundColor : d.color }} className="thumbnail"/>
+          <h3 className="drink-name">{d.name}</h3>
         </div>
       )}
     </div>
