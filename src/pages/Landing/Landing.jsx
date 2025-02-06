@@ -13,12 +13,12 @@ const Landing = () => {
     <div>
       <h3>Welcome to Gloomy Spirits</h3>
       <div class="bottle-interface">
-        <img class="bottle" src={Whiskey} alt="whiskey" />
-        <img class="bottle" src={Vodka} alt="whiskey" />
-        <img class="bottle" src={Rum} alt="whiskey" />
-        <img class="bottle" src={Gin} alt="whiskey" />
-        <img class="bottle" src={Tequila} alt="whiskey" />
-        <img class="bottle" src={Other} alt="whiskey" />
+        <img width="250" height="500" class="bottle" src={Whiskey} alt="whiskey" />
+        <img width="180" height="500" class="bottle" src={Vodka} alt="whiskey" />
+        <img width="200" height="500" class="bottle" src={Rum} alt="whiskey" />
+        <img width="200" height="500" class="bottle" src={Gin} alt="whiskey" />
+        <img width="250" height="500" class="bottle" src={Tequila} alt="whiskey" />
+        <img width="350" height="500" class="bottle" src={Other} alt="whiskey" />
       </div>
     </div>
     </>
