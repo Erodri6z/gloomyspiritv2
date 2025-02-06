@@ -1,9 +1,19 @@
 .bottle-interface{
   display: flex;
-  /* justify-content: space-around; */
+  /* align-items: center; */
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
 }
 
 .bottle{
-  max-width: 200px;
-  position: relative;
+  width: 300px;
+  height: 550px;
+
+  /* position: relative; */
+}
+
+.bottle:hover{
+  height:600px;
+  width: 600px;
 }
