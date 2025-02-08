@@ -10,4 +10,13 @@
 
 .thumbnail{
   border: 2px solid black;
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.results-div{
+  border: solid black 2px;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
 }

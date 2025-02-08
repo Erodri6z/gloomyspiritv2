@@ -29,7 +29,7 @@ const Results = () => {
 
   return (
     <>
-    <div>
+    <div className="results-div">
       {fakeDrinks.map(d => 
         <div key={d.name} className="drink-card" >
           <img src={d.image} alt="drink" style={{ backgroundColor : d.color }} className="thumbnail"/>

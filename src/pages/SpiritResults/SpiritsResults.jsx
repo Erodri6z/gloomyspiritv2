@@ -6,16 +6,19 @@ import Gin from "../../assets/bottles/Gin.png"
 import Other from "../../assets/bottles/Other.png"
 import Results from "../../components/Results/Results"
 
+import './SpiritResults.css'
+
 
 const SpiritsResults = (props) => {
   let s = props.spirit
   
   return (
     <>
+    <div className="sr-div">
     <img src={s} alt="spirit" />
     <div>
-      <h4>heres the spirit</h4>
       <Results />
+    </div>
     </div>
     </>
   )
