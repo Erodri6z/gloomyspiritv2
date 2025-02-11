@@ -5,7 +5,13 @@
 .drink-card{
   background: white;
   border: 10px solid white;
-  margin: 2px;
+  margin: 5px;
+  height: 220px;
+}
+
+.drink-card:hover{
+  filter:drop-shadow(10px 10px 0 rgb(255, 0, 0))
+  drop-shadow(-10px -10px 0 rgb(0, 30, 255))
 }
 
 .thumbnail{
@@ -15,8 +21,12 @@
 }
 
 .results-div{
+  margin: auto;
   border: solid black 2px;
   display: flex;
-  width: 100%;
-  overflow-x: scroll;
+  justify-content: center;
+  flex-wrap: wrap;
+  width:500px;
+  height: 400px;
+  overflow-y: scroll;
 }
