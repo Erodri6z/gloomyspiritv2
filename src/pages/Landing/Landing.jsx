@@ -15,22 +15,22 @@ const Landing = (props) => {
       <h3>Welcome to Gloomy Spirits</h3>
       <div class="bottle-interface">
         <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Whiskey)}>
-          <img width="250" height="500" class="bottle" src={Whiskey} alt="whiskey" />
+          <img max-width="250" max-height="500" class="bottle" src={Whiskey} alt="whiskey" />
         </Link>
         <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Vodka)}>
-          <img width="180" height="500" class="bottle" src={Vodka} alt="whiskey" />
+          <img max-width="180" max-height="500" class="bottle" src={Vodka} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Rum)}>
-          <img width="200" height="500" class="bottle" src={Rum} alt="whiskey" />
+        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Rum)}>
+          <img max-width="200" max-height="300" class="bottle" src={Rum} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Gin)}>
-          <img width="200" height="500" class="bottle" src={Gin} alt="whiskey" />
+        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Gin)}>
+          <img max-width="200" max-height="500" class="bottle" src={Gin} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Tequila)}>
-          <img width="250" height="500" class="bottle" src={Tequila} alt="whiskey" />
+        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Tequila)}>
+          <img max-width="250" max-height="500" class="bottle" src={Tequila} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Other)}>
-          <img width="350" height="500" class="bottle" src={Other} alt="whiskey" />
+        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Other)}>
+          <img max-width="350" max-height="500" class="bottle" src={Other} alt="whiskey" />
         </Link>
       </div>
     </div>
