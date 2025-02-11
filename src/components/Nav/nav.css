@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  width: 100%;
+  width: 99dvw;
 }
 
 ul {
@@ -13,5 +13,6 @@ ul {
 }
 
 .nav-item{
-  margin: 5px;
+  padding: 13px;
+
 }
