@@ -20,16 +20,16 @@ const Landing = (props) => {
         <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Vodka)}>
           <img max-width="180" max-height="500" class="bottle" src={Vodka} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Rum)}>
+        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Rum)}>
           <img max-width="200" max-height="300" class="bottle" src={Rum} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Gin)}>
+        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Gin)}>
           <img max-width="200" max-height="500" class="bottle" src={Gin} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Tequila)}>
+        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Tequila)}>
           <img max-width="250" max-height="500" class="bottle" src={Tequila} alt="whiskey" />
         </Link>
-        <Link to={"/SpiritSmax-earch"} onClick={() => props.chooseSpirit(Other)}>
+        <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Other)}>
           <img max-width="350" max-height="500" class="bottle" src={Other} alt="whiskey" />
         </Link>
       </div>
@@ -38,4 +38,4 @@ const Landing = (props) => {
   )
 }
 
-export default Landing
+export default Landing 
