@@ -17,6 +17,8 @@ function App() {
 
   return (
     <>
+    <div>
+
     <Nav />
     <Routes>
       <Route 
@@ -32,6 +34,7 @@ function App() {
       }
       />
     </Routes>
+    </div>
     </>
   )
 }
