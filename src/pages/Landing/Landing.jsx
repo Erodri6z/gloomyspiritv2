@@ -11,7 +11,7 @@ import "./Landing.css"
 const Landing = (props) => {
   return (
     <>
-    <div>
+    <div className="homepage">
       <h3>Welcome to Gloomy Spirits</h3>
       <div class="bottle-interface">
         <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Whiskey)}>
