@@ -11,7 +11,7 @@ const Results = () => {
       image: Martini,
       color: "white"
     },{
-      name: "Old Fasioned",
+      name: "Luxardo Old Fashioned",
       image: Rocks,
       color: "brown"
     },{

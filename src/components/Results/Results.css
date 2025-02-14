@@ -1,12 +1,15 @@
 .drink-name{
   color: black;
+  margin: 0px;
 }
 
 .drink-card{
   background: white;
   border: 10px solid white;
   margin: 5px;
-  height: 220px;
+  height: 200px;
+  /* height: fit-content ; */
+  width: min-content;
 }
 
 .drink-card:hover{

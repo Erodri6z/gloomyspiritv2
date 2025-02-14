@@ -1,5 +1,5 @@
 nav {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +8,8 @@ nav {
   max-width: 1280px;
   margin:auto ;
   margin-top: -10px;
+  font-size: 20px;
+
 }
 
 ul {
@@ -18,4 +20,10 @@ ul {
 
 .nav-item{
   padding: 13px;
+  /* font-size: 20px; */
+}
+
+.nav-item:hover{
+  filter:drop-shadow(10px 10px 0 rgb(255, 0, 0))
+  drop-shadow(-10px -10px 0 rgb(0, 30, 255))
 }
