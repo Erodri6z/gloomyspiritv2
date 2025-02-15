@@ -11,3 +11,5 @@ const SocialsPage = () => {
     </>
   )
 }
+
+export default SocialsPage

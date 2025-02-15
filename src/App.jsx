@@ -5,6 +5,7 @@ import { Route, Routes} from 'react-router'
 import Nav from './components/Nav/nav'
 import Landing from './pages/Landing/Landing'
 import SpiritsResults from './pages/SpiritResults/SpiritsResults'
+import SocialsPage from './pages/Socials/SocialsPage'
 import './App.css'
 import { useState } from 'react'
 
@@ -31,6 +32,12 @@ function App() {
       path='/SpiritSearch'
       element={
         <SpiritsResults spirit={spirit} />
+      }
+      />
+      <Route 
+      path="/socials"
+      element={
+        <SocialsPage /> 
       }
       />
     </Routes>
