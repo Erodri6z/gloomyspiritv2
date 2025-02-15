@@ -6,6 +6,7 @@ import Nav from './components/Nav/nav'
 import Landing from './pages/Landing/Landing'
 import SpiritsResults from './pages/SpiritResults/SpiritsResults'
 import SocialsPage from './pages/Socials/SocialsPage'
+import Spirits from './pages/Spirits/Spirits'
 import './App.css'
 import { useState } from 'react'
 
@@ -38,6 +39,12 @@ function App() {
       path="/socials"
       element={
         <SocialsPage /> 
+      }
+      />
+      <Route 
+      path="/spirit"
+      element={
+        <Spirits />
       }
       />
     </Routes>
