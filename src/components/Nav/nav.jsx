@@ -9,7 +9,11 @@ function Nav () {
       <ul>
         <li className='nav-item'>Spirits</li>
         <li className='nav-item'>Methods</li>
-        <li className='nav-item'>Socials</li>
+        <li className='nav-item'>
+          <a href="/socials">
+            Socials
+          </a>
+        </li>
       </ul>
     </nav>
   )
