@@ -5,6 +5,8 @@ import Tequila from "../../assets/bottles/Tequila.png"
 import Gin from "../../assets/bottles/Gin.png"
 import Other from "../../assets/bottles/Other.png"
 
+import './Spirits.css'
+
 const Spirits = () => {
 
   const bottles = [{
@@ -42,14 +44,14 @@ const Spirits = () => {
   return (
     <>
     <div>
-      <h1>Spirits</h1>
+      {/* <h1>Spirits</h1> */}
       {bottles.map(b => 
-        <div key={b.name}>
-          <div>
-          <h4>{b.name}</h4>
+        <div key={b.name} className="spirit-display">
+          <div className="image-title">
           <img src={b.image} alt="image" />
           </div>
-          <div>
+          <div className="desc">
+          <h2>{b.name}</h2>
             <p>{b.desc}</p>
             <p>{b.uses}</p>
           </div>

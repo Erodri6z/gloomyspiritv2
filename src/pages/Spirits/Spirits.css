@@ -1,0 +1,13 @@
+.spirit-display{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+  width: 89vw;
+  height: 90vh;
+}
+
+.desc{
+  padding: 50px;
+  text-align: start;
+}
