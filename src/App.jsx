@@ -7,6 +7,7 @@ import Landing from './pages/Landing/Landing'
 import SpiritsResults from './pages/SpiritResults/SpiritsResults'
 import SocialsPage from './pages/Socials/SocialsPage'
 import Spirits from './pages/Spirits/Spirits'
+import * as drinkservice from './Services/drinkServices'
 import './App.css'
 import { useState } from 'react'
 
