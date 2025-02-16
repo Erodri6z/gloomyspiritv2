@@ -1,4 +1,5 @@
 import Results from "../../components/Results/Results"
+import Search from "../../components/Search/Search"
 
 
 
@@ -7,6 +8,7 @@ const SearchResults = (props) => {
   
   return (
     <>
+    <Search handleSearch={props.handleSearch}/>
     <div className="sr-div">
       <Results drinks={props.drinks}/>
     </div>

@@ -50,7 +50,7 @@ function App() {
       <Route
       path='/Search'
       element={
-        <SearchResults drinks={drinks}/>
+        <SearchResults drinks={drinks} handleSearch={handleSearch}/>
       }
       />
       <Route 
