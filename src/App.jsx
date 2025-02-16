@@ -1,10 +1,11 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'\
-import { Route, Routes} from 'react-router'
+import { Navigate, Route, Routes, useNavigate} from 'react-router'
 import Nav from './components/Nav/nav'
 import Landing from './pages/Landing/Landing'
 import SpiritsResults from './pages/SpiritResults/SpiritsResults'
+import SearchResults from './pages/SearchResults/SearchResults'
 import SocialsPage from './pages/Socials/SocialsPage'
 import Spirits from './pages/Spirits/Spirits'
 import * as drinkservice from './Services/drinkServices'
@@ -14,6 +15,7 @@ import { useState } from 'react'
 function App() {
   const [spirit, setSpirit] = useState({})
   const [drinks, setDrinks] = useState([])
+  const navigate = useNavigate()
 
   const chooseSpirit = (s) => {
     setSpirit(s)
@@ -24,6 +26,7 @@ function App() {
     const d = await drinkservice.SearchDrink(s)
     console.log(d)
     setDrinks(d)
+    navigate("/Search")
   }
 
   return (
@@ -42,6 +45,12 @@ function App() {
       path='/SpiritSearch'
       element={
         <SpiritsResults spirit={spirit} drinks={drinks}/>
+      }
+      />
+      <Route
+      path='/Search'
+      element={
+        <SearchResults drinks={drinks}/>
       }
       />
       <Route 
