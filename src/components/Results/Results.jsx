@@ -26,13 +26,27 @@ const Results = (props) => {
   // ]
 
   // console.log(fakeDrinks[1].color.replaceAll('"', ''))
+  const getImage = (rgArr) => {
+    switch (rgArr[0].toLowerCase()) {
+      case "collins glass":
+        return Collins
+      case "rocks glass":
+        return Rocks
+      case "margarita glass":
+        return Marg
+      case "coupe glass":
+        return Coupe
+      case "martini glass":
+        return Martini
+    }
+  }
 
   return (
     <>
     <div className="results-div">
       {props.drinks.map(d => 
         <div key={d.name} className="drink-card" >
-          <img src={d.image? d.image: ""} alt="drink" style={{ backgroundColor : d.color }} className="thumbnail"/>
+          <img src={d.image? d.image: getImage(d.recommendedGlasses)} alt="drink" style={{ backgroundColor : d.color }} className="thumbnail"/>
           <h3 className="drink-name">{d.name}</h3>
         </div>
       )}
