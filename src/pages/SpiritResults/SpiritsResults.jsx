@@ -17,7 +17,7 @@ const SpiritsResults = (props) => {
     <div className="sr-div">
     <img src={s} alt="spirit" />
     <div>
-      <Results />
+      <Results drinks={props.drinks}/>
     </div>
     </div>
     </>

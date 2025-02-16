@@ -1,12 +1,12 @@
 import { useState } from "react"
 
-const Search = () => {
-  const [search, setSearch] = useState({
+const Search = (props) => {
+  const [searchData, setSearchData] = useState({
     search: ""
   })
 
   const handleChange = (e) => {
-    setSearch({ ...search,
+    setSearchData({ ...searchData,
       [e.target.name] : e.target.value
     })
   }
@@ -15,7 +15,7 @@ const Search = () => {
   const handleSearch = (e) => {
     e.preventDefault()
     try{
-      console.log("looking for this:", search)
+      props.handleSearch(searchData.search)
     } catch (err) {
       console.log(err)
     }

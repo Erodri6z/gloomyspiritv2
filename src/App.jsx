@@ -13,9 +13,17 @@ import { useState } from 'react'
 
 function App() {
   const [spirit, setSpirit] = useState({})
+  const [drinks, setDrinks] = useState([])
 
   const chooseSpirit = (s) => {
     setSpirit(s)
+  }
+
+  const handleSearch = async (s) => {
+    console.log(s)
+    const d = await drinkservice.SearchDrink(s)
+    console.log(d)
+    setDrinks(d)
   }
 
   return (
@@ -27,13 +35,13 @@ function App() {
       <Route 
       path="/"
       element={
-        <Landing chooseSpirit={chooseSpirit}/>
+        <Landing chooseSpirit={chooseSpirit} handleSearch={handleSearch}/>
       }
       />
       <Route
       path='/SpiritSearch'
       element={
-        <SpiritsResults spirit={spirit} />
+        <SpiritsResults spirit={spirit} drinks={drinks}/>
       }
       />
       <Route 

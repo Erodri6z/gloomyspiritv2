@@ -14,7 +14,7 @@ const Landing = (props) => {
     <>
     <div className="homepage">
       <h3>Welcome to Gloomy Spirits</h3>
-      <Search />
+      <Search handleSearch={props.handleSearch}/>
       <div class="bottle-interface">
         <Link to={"/SpiritSearch"} onClick={() => props.chooseSpirit(Whiskey)}>
           <img max-width="250" max-height="500" class="bottle" src={Whiskey} alt="whiskey" />

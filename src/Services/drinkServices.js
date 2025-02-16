@@ -16,8 +16,8 @@ async function GetDrinks()  {
 
 async function GetByAlc(alc) {
   try {
-    const res = await fetch(`${BASE_URL}/byAlcohol/${alc}`)
-    return await res.json()
+    const res = await fetch(`${BASE_URL}/drinks/byAlcohol/${alc}`)
+    res.json()
   } catch (err) {
     throw err
   }
@@ -26,7 +26,7 @@ async function GetByAlc(alc) {
 
 async function SearchDrink(n) {
   try {
-    const res = await fetch(`${BASE_URL}/byAlcohol/${n}`)
+    const res = await fetch(`${BASE_URL}/drinks/byName/${n}`)
     return await res.json()
   } catch (err) {
     throw err
