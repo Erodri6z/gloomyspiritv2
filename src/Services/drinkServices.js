@@ -13,4 +13,15 @@ async function GetDrinks()  {
   }
 }
 
+
+async function GetByAlc(alc) {
+  try {
+    const res = await fetch(`${BASE_URL}/byAlcohol/${alc}`)
+    return await res.json()
+  } catch (err) {
+    throw err
+  }
+}
+
+
 export { GetDrinks }
