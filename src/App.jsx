@@ -21,6 +21,12 @@ function App() {
     setSpirit(s)
   }
 
+  const handleSpiritSearch = async (s) => {
+    const d = await drinkservice.GetByAlc(s)
+    setDrinks(d)
+    // navigate("/Search")
+  }
+
   const handleSearch = async (s) => {
     console.log(s)
     const d = await drinkservice.SearchDrink(s)
@@ -38,7 +44,7 @@ function App() {
       <Route 
       path="/"
       element={
-        <Landing chooseSpirit={chooseSpirit} handleSearch={handleSearch}/>
+        <Landing chooseSpirit={chooseSpirit} handleSearch={handleSearch} handleSpiritSearch={handleSpiritSearch}/>
       }
       />
       <Route
