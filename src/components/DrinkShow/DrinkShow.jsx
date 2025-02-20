@@ -1,42 +1,54 @@
-const DrinkShow = () => {
+const DrinkShow = (props) => {
+
+  let drink = props.drink
   return (
     <>
     <div>
-      <h3>cocktail name</h3>
-      <h4>Main Spiit</h4>
-      <ul>
-        <li>Water</li>
-        <li>sugar</li>
-        <li>lemons</li>
-      </ul>
-      <ul>
-        <li>3oz</li>
-        <li>3oz</li>
-        <li>3oz</li>
-      </ul>
-      <ul>
-        <li>bitters</li>
-      </ul>
-      <ul>
-        <li>Shaken</li>
-        <li>Stirred</li>
-      </ul>
-      <ul>
-        <li> garnish Lemon Slice</li>
-      </ul>
-      <ul>
-        <li>Notes</li>
-      </ul>
-
-      <ul>
-        <li>recommendedGlasses</li>
-      </ul>
-
-      <ul>
-        <li>Notes</li>
-        <li>Vibes</li>
-        <li>credit</li>
-      </ul>
+      <h3>{drink.name}</h3>
+      <h4>{drink.mainSpirit}</h4>
+      <div className="recipe">
+        <div className="mesurements">
+          {drink.measurementsOz.map((m) => 
+            <li key={m}>{m}</li>
+          )}
+        </div>
+        <div className="ingrients">
+          {drink.ingredients.map((i) => 
+            <li key={i}>{i}</li>
+          )}
+        </div>
+        {drink.bitters.map((b) => 
+          <li key={b}>{b}</li>
+        )}
+      </div>
+      <div className="methods">
+        <p>Methods:</p>
+        {drink.method.map((m) => 
+          <li key={m}>{m}</li>
+        )}
+      </div>
+      <div className="garnish">
+        {drink.garnish.map((g) => 
+          <li key={g}>{g}</li>
+        )}
+      </div>
+      <div className="recommendedGlass">
+        {drink.recommendedGlasses.map((r) => 
+          <li key={r}>{r}</li>
+        )}
+      </div>
+      <div className="notes">
+        {drink.notes.map((n) => 
+          <li key={n}>{n}</li>
+        )}
+      </div>
+      <div className="vibe-credit">
+        <div>
+          <p>Vibe:  {drink.vibe}</p>
+          <p>Credit: {drink.credit}</p>
+        </div>
+        <div></div>
+      </div>
 
     </div>
     </>

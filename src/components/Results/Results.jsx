@@ -68,7 +68,7 @@ const Results = (props) => {
           borderRadius: "10px",
           boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
           textAlign: "center",
-          maxWidth: "400px",
+          maxWidth: "800px",
           width: "90%", 
           position: "fixed", 
           top: "50%", 
@@ -76,7 +76,7 @@ const Results = (props) => {
           transform: "translate(-50%, -50%)", 
           zIndex: "9999", 
         }}>
-        <DrinkShow />
+        <DrinkShow drink={d}/>
         </Popup>
       )}
     </div>
