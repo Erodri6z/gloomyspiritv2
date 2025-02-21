@@ -1,3 +1,5 @@
+import './DrinkShow.css'
+
 const DrinkShow = (props) => {
 
   let drink = props.drink
@@ -7,19 +9,23 @@ const DrinkShow = (props) => {
       <h3>{drink.name}</h3>
       <h4>{drink.mainSpirit}</h4>
       <div className="recipe">
-        <div className="mesurements">
-          {drink.measurementsOz.map((m) => 
-            <li key={m}>{m}</li>
+        <div className="i-m">
+          <div className="mesurements">
+            {drink.measurementsOz.map((m) => 
+              <li key={m}>{m} oz</li>
+            )}
+          </div>
+          <div className="ingrients">
+            {drink.ingredients.map((i) => 
+              <li key={i}>{i}</li>
+            )}
+          </div>
+        </div>
+        <div className='bitters'>
+          {drink.bitters.map((b) => 
+            <li key={b}>{b}</li>
           )}
         </div>
-        <div className="ingrients">
-          {drink.ingredients.map((i) => 
-            <li key={i}>{i}</li>
-          )}
-        </div>
-        {drink.bitters.map((b) => 
-          <li key={b}>{b}</li>
-        )}
       </div>
       <div className="methods">
         <p>Methods:</p>
