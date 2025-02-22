@@ -3,11 +3,34 @@ import './DrinkShow.css'
 const DrinkShow = (props) => {
 
   let drink = props.drink
+
+  const garnishList = (arr) => {
+    let len = arr.length
+    switch (len) {
+      case 1:
+        return `${arr[0]}`
+      case 2:
+        return `${arr[0]} or ${arr[1]}`
+      case 3:
+        return `${arr[0]}, ${arr[1]} or ${arr[2]}`
+      case 4:
+        return `${arr[0]}, ${arr[1]}, ${arr[2]}, or ${arr[3]}`
+    }
+  }
   return (
     <>
     <div>
       <h3>{drink.name}</h3>
       <h4>{drink.mainSpirit}</h4>
+      <div className="methods">
+        <p>Methods:</p>
+        {drink.method.map((m) => 
+          <li key={m}>{m}</li>
+        )}
+      </div>
+      <div className="recommendedGlass">
+        <p>Serve in : {garnishList(drink.recommendedGlasses)}</p>
+      </div>
       <div className="recipe">
         <div className="i-m">
           <div className="mesurements">
@@ -27,21 +50,8 @@ const DrinkShow = (props) => {
           )}
         </div>
       </div>
-      <div className="methods">
-        <p>Methods:</p>
-        {drink.method.map((m) => 
-          <li key={m}>{m}</li>
-        )}
-      </div>
       <div className="garnish">
-        {drink.garnish.map((g) => 
-          <li key={g}>{g}</li>
-        )}
-      </div>
-      <div className="recommendedGlass">
-        {drink.recommendedGlasses.map((r) => 
-          <li key={r}>{r}</li>
-        )}
+        <p>Garnish With : {garnishList(drink.garnish)}</p>
       </div>
       <div className="notes">
         {drink.notes.map((n) => 
