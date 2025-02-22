@@ -4,6 +4,8 @@
 }
 
 .drink-card{
+  font-family: "Lacquer", serif;
+  font-weight: 400;
   background: white;
   border: 10px solid white;
   margin: 5px;
@@ -20,4 +22,6 @@
   border: 2px solid black;
   max-height: 150px;
   max-width: 150px;
+  min-height: 150px;
+  min-width: 150px;
 }
