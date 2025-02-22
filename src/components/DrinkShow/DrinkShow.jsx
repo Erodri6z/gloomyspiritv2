@@ -35,7 +35,8 @@ const DrinkShow = (props) => {
     <>
     <div className='cocktail-card'>
       {/* <h3>{drink.name}</h3> */}
-      <h4>{drink.mainSpirit}</h4>
+      {/* <h4>{drink.mainSpirit}</h4>
+       */}
       <div className='top'>
           <div className="methods">
             <p>Methods:{methodList(drink.method)}</p>
