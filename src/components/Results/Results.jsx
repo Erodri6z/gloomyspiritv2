@@ -10,43 +10,7 @@ import Rocks from "./../../assets/defaultcups/Rocks Glass.png"
 import "./Results.css"
 import DrinkPolar from "../DrinkPolar/DrinkPolar"
 const Results = (props) => {
-  // console.log(selectedDrink)
 
-  // const fakeDrinks = [
-  //   {
-  //     name: "Martini",
-  //     image: Martini,
-  //     color: "white"
-  //   },{
-  //     name: "Luxardo Old Fashioned",
-  //     image: Rocks,
-  //     color: "brown"
-  //   },{
-  //     name: "Margarita",
-  //     image: Marg,
-  //     color: "yellow"
-  //   },{
-  //     name: "Daquiri",
-  //     image: Coupe,
-  //     color: "white"
-  //   }
-  // ]
-
-  // console.log(fakeDrinks[1].color.replaceAll('"', ''))
-  // const getImage = (rgArr) => {
-  //   switch (rgArr[0].toLowerCase()) {
-  //     case "collins glass":
-  //       return Collins
-  //     case "rocks glass":
-  //       return Rocks
-  //     case "margarita glass":
-  //       return Marg
-  //     case "coupe glass":
-  //       return Coupe
-  //     case "martini glass":
-  //       return Martini
-  //   }
-  // }
 
   return (
     <>
@@ -56,13 +20,7 @@ const Results = (props) => {
         <div>
           <DrinkPolar key={d.id} drink={d}/>
         </div>
-        // <div key={d.id} className="drink-card">
-        //   <img src={d.image? d.image: getImage(d.recommendedGlasses)} alt="drink" style={{ backgroundColor : d.color }} className="thumbnail"/>
-        //   <h3 className="drink-name">{d.name}</h3>
-        // </div>
-        
         }
-        // margin="auto"
         modal
         closeOnDocumentClick
         contentStyle={{
