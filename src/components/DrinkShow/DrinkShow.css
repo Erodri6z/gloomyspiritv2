@@ -9,6 +9,14 @@
   display: flex;
   list-style: none;
   align-items: flex-start;
+  
+}
+
+.methods{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
 }
 
 .ingrients {
@@ -26,4 +34,18 @@
 
 .bitters{
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cocktail-card{
+  font-family: "Major Mono Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.top{
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 15px;
 }
