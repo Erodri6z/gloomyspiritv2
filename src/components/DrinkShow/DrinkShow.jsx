@@ -1,4 +1,5 @@
 import './DrinkShow.css'
+import DrinkPolar from '../DrinkPolar/DrinkPolar'
 
 const DrinkShow = (props) => {
 
@@ -42,8 +43,14 @@ const DrinkShow = (props) => {
             <p>Methods:{methodList(drink.method)}</p>
             <p>Garnish With:{arrList(drink.garnish)}</p>
             <p>Serve in:{arrList(drink.recommendedGlasses)}</p>
+            <div className="notes">
+              {drink.notes.map((n) => 
+                <li key={n}>{n}</li>
+              )}
+            </div>
           </div>
         <div className="recipe">
+              <DrinkPolar drink={drink}/>
           <div className="i-m">
             <div className="mesurements">
               {drink.measurementsOz.map((m) => 
@@ -62,11 +69,6 @@ const DrinkShow = (props) => {
             )}
           </div>
         </div>
-      </div>
-      <div className="notes">
-        {drink.notes.map((n) => 
-          <li key={n}>{n}</li>
-        )}
       </div>
       <div className="vibe-credit">
         <div>

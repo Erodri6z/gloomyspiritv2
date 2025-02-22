@@ -1,0 +1,23 @@
+.drink-name{
+  color: black;
+  margin: 0px;
+}
+
+.drink-card{
+  background: white;
+  border: 10px solid white;
+  margin: 5px;
+  height: 200px;
+  width: min-content;
+}
+
+.drink-card:hover{
+  filter:drop-shadow(10px 10px 0 rgb(255, 0, 0))
+  drop-shadow(-10px -10px 0 rgb(0, 30, 255))
+}
+
+.thumbnail{
+  border: 2px solid black;
+  max-height: 150px;
+  max-width: 150px;
+}
