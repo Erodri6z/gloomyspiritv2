@@ -1,5 +1,6 @@
 import './DrinkShow.css'
 import DrinkPolar from '../DrinkPolar/DrinkPolar'
+import Notes from '../Notes/Notes'
 
 const DrinkShow = (props) => {
 
@@ -40,11 +41,7 @@ const DrinkShow = (props) => {
             <p>Methods:{methodList(drink.method)}</p>
             <p>Garnish With:{arrList(drink.garnish)}</p>
             <p>Serve in:{arrList(drink.recommendedGlasses)}</p>
-            <div className="notes">
-              {drink.notes.map((n) => 
-                <li key={n}>{n}</li>
-              )}
-            </div>
+            <Notes notes={drink.notes}/>
           </div>
         <div className="recipe">
               <DrinkPolar drink={drink}/>
