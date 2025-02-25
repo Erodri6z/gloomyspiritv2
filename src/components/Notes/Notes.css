@@ -4,6 +4,7 @@
   background-color: orange;
   color: black;
   font-family: "Lacquer", serif;
+  transform: rotate(-4deg);
 }
 
 .note-title{
