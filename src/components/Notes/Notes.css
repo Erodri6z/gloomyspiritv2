@@ -1,0 +1,17 @@
+.sticky-note{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  color: black;
+  font-family: "Lacquer", serif;
+}
+
+.note-title{
+  text-align: center;
+}
+
+.notes{
+  text-align: left;
+  padding: 5px;
+  list-style: line;
+}

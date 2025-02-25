@@ -1,12 +1,14 @@
+import './Notes.css'
+
 const Notes = (props) => {
   let notes = props.notes
   
   return (
     <>
     <div className="sticky-note">
-      <h4>Notes</h4>
+      <h4 className='note-title'>Notes</h4>
       {notes.map((n) => 
-      <li>{n}</li>
+      <li className='notes'>{n}</li>
       )}
     </div>
     </>
