@@ -38,13 +38,12 @@ const DrinkShow = (props) => {
     <div className='cocktail-card'>
       <div className='top'>
           <div className="methods">
-            <p>Methods:{methodList(drink.method)}</p>
-            <p>Garnish With:{arrList(drink.garnish)}</p>
-            <p>Serve in:{arrList(drink.recommendedGlasses)}</p>
-            <Notes notes={drink.notes}/>
+            <DrinkPolar drink={drink}/>
+            <li>Methods: {methodList(drink.method)}</li>
+            <li>Garnish With: {arrList(drink.garnish)}</li>
+            <li>Serve in: {arrList(drink.recommendedGlasses)}</li>
           </div>
         <div className="recipe">
-              <DrinkPolar drink={drink}/>
           <div className="i-m">
             <div className="mesurements">
               {drink.measurementsOz.map((m) => 
@@ -62,6 +61,11 @@ const DrinkShow = (props) => {
               <li key={b}>{b}</li>
             )}
           </div>
+            {drink.notes[0]?
+            <Notes notes={drink.notes}/>
+            :
+            <p></p>  
+            }
         </div>
       </div>
       <div className="vibe-credit">
