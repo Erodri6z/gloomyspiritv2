@@ -11,11 +11,11 @@
   margin: 5px;
   height: 200px;
   width: min-content;
+
 }
 
 .drink-card:hover{
-  filter:drop-shadow(10px 10px 0 rgb(255, 0, 0))
-  drop-shadow(-10px -10px 0 rgb(0, 30, 255))
+  animation: red-blue-polar 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .thumbnail{
@@ -24,4 +24,17 @@
   max-width: 150px;
   min-height: 150px;
   min-width: 150px;
+}
+
+@keyframes red-blue-polar {
+  0% {
+    filter:  drop-shadow(0 0 0 rgb(0, 0, 0))
+    drop-shadow(0 0 0 rgb(0, 0, 0));
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
+    drop-shadow(-10px -10px 0 rgb(0, 30, 255)) ;
+    transform: rotate(2deg);
+  }
 }
