@@ -38,7 +38,9 @@ const DrinkShow = (props) => {
     <div className='cocktail-card'>
       <div className='top'>
           <div className="methods">
-            <DrinkPolar drink={drink}/>
+            <div className='polaroid'>
+              <DrinkPolar drink={drink}/>
+            </div>
             <li>Methods: {methodList(drink.method)}</li>
             <li>Garnish With: {arrList(drink.garnish)}</li>
             <li>Serve in: {arrList(drink.recommendedGlasses)}</li>
