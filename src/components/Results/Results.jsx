@@ -37,7 +37,9 @@ const Results = (props) => {
           transform: "translate(-50%, -50%)", 
           zIndex: "9999", 
         }}>
-        <DrinkShow drink={d}/>
+          <div className="drink-show">
+            <DrinkShow drink={d}/>
+          </div>
         </Popup>
       )}
     </div>

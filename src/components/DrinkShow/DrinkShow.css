@@ -1,3 +1,7 @@
+.cocktail-card{
+  animation: slit-in-horizontal 0.45s ease-out both;
+}
+
 .recipe{
   display: flex;
   flex-direction: column;
@@ -50,3 +54,4 @@
   justify-content: space-around;
   font-size: 15px;
 }
+
