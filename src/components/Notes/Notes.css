@@ -6,6 +6,7 @@
   font-family: "Lacquer", serif;
   margin: 10px 0 ;
   transform: rotate(-4deg);
+  animation:  slide-in-bck-right 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;;
 }
 
 .note-title{
@@ -16,4 +17,18 @@
   text-align: left;
   padding: 5px;
   list-style: line;
+}
+
+@keyframes slide-in-bck-right {
+  0% {
+    opacity: 0;
+  }
+  95% {
+    transform: translateZ(700px) translateX(400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) translateX(0) rotate(-5deg);
+    opacity: 1;
+  }
 }
