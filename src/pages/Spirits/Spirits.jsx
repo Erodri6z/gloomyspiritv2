@@ -4,10 +4,29 @@ import Rum from "../../assets/bottles/Rum.png"
 import Tequila from "../../assets/bottles/Tequila.png"
 import Gin from "../../assets/bottles/Gin.png"
 import Other from "../../assets/bottles/Other.png"
+import { useEffect } from "react"
 
 import './Spirits.css'
 
 const Spirits = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show')
+        }else {
+          entry.target.classList.remove('show')
+        }
+      })
+    })
+    const hiddenElements = document.querySelectorAll('.hidden')
+    hiddenElements.forEach((e) => observer.observe(e))
+
+    return () => {
+      hiddenElements.forEach((e) => observer.unobserve(e)) 
+    }
+  }, [])
 
   const bottles = [{
     name: "Vodka",
@@ -52,7 +71,7 @@ const Spirits = () => {
     <div>
       {/* <h1>Spirits</h1> */}
       {bottles.map(b => 
-        <div key={b.name} className="spirit-display" style={b.side===false? { flexDirection: "row-reverse" } : {}}>
+        <div key={b.name} className="spirit-display hidden" style={b.side===false? { flexDirection: "row-reverse" } : {}}>
           <div className="image-title">
           <img src={b.image} alt="image" />
           </div>
