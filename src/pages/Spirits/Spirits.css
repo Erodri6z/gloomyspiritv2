@@ -1,12 +1,12 @@
 .spirit-display{
   margin: auto;
   display: flex;
-  /* background-color: black; */
   justify-content: space-around;
   align-items: center;
   /* padding: 10px; */
-  width: 89vw;
+  width: 90vw;
   height: 100dvh;
+  /* background-color: gray; */
 }
 .desc{
   padding: 50px;

@@ -68,8 +68,8 @@ const Spirits = () => {
 
   return (
     <>
-    <div>
-      {/* <h1>Spirits</h1> */}
+    <div className="spirits">
+      <h1>Spirits</h1>
       {bottles.map(b => 
         <div key={b.name} className="spirit-display hidden" style={b.side===false? { flexDirection: "row-reverse" } : {}}>
           <div className="image-title">
