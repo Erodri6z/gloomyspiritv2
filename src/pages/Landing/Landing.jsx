@@ -6,7 +6,6 @@ import Gin from "../../assets/bottles/Gin.png"
 import Other from "../../assets/bottles/Other.png"
 import { Link } from "react-router-dom"
 import "./Landing.css"
-import Search from "../../components/Search/Search"
 
 
 const Landing = (props) => {
@@ -19,7 +18,6 @@ const Landing = (props) => {
     <>
     <div className="homepage">
       <h3>Pick Your Poison</h3>
-      <Search handleSearch={props.handleSearch}/>
       <div class="bottle-interface">
         <Link to={"/SpiritSearch"} onClick={() => selectAlc(Whiskey, "Whiskey")}>
           <img max-width="250" max-height="500" class="bottle" src={Whiskey} alt="whiskey" />
