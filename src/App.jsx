@@ -39,7 +39,7 @@ function App() {
     <>
     <div className='main'>
 
-    <Nav />
+    <Nav handleSearch={handleSearch} />
     <Routes>
       <Route 
       path="/"

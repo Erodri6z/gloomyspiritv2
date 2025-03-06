@@ -1,11 +1,14 @@
 import './nav.css'
+import Search from '../Search/Search'
 
-function Nav () {
+
+function Nav (props) {
   return (
+    <>
     <nav>
       <a href="/">
-      <h3 className='title'>
-        Gloomy Spirits
+        <h3 className='title'>
+          Gloomy Spirits
         </h3>
       </a>
       <ul>
@@ -22,6 +25,8 @@ function Nav () {
         </li>
       </ul>
     </nav>
+    <Search handleSearch={props.handleSearch}/>
+    </>
   )
 }
 
