@@ -29,13 +29,18 @@
 
 .results-div{
   margin: auto;
-  border: solid black 2px;
+  border: solid rgb(167, 3, 3) 2px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width:500px;
   height: 400px;
   overflow-y: scroll;
+  background-color: #000000;
+  opacity: 1; 
+  background: radial-gradient(circle, transparent 20%, #000000   20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 30px 30px, linear-gradient(#f74545 2.4000000000000004px, transparent 2.4000000000000004px) 0 -1.2000000000000002px, linear-gradient(90deg, #f74545 2.4000000000000004px, #000000 2.4000000000000004px) -1.2000000000000002px 0;
+  background-size: 60px 60px, 20px 20px, 30px 30px, 30px 30px;  
+
 }
 @keyframes flicker-in-1 {
   0% {

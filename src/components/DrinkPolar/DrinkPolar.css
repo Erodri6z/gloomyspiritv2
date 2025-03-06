@@ -11,6 +11,7 @@
   margin: 5px;
   height: 200px;
   width: min-content;
+  animation: red-blue-polar-reverse 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
 
@@ -36,5 +37,18 @@
     filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
     drop-shadow(-10px -10px 0 rgb(0, 30, 255)) ;
     transform: rotate(2deg);
+  }
+}
+
+@keyframes red-blue-polar-reverse {
+  0% {
+    filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
+    drop-shadow(-10px -10px 0 rgb(0, 30, 255)) ;
+    transform: rotate(2deg);
+  }
+  100% {
+    filter:  drop-shadow(0 0 0 rgb(0, 0, 0))
+    drop-shadow(0 0 0 rgb(0, 0, 0));
+    transform: rotate(0deg);
   }
 }
