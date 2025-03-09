@@ -1,15 +1,19 @@
 .search-form{
   display: flex;
   justify-content: center;
+  
 
 }
 
 .search-bar{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   border: 0px;
   padding: 10px;
   margin-right: 10px;
   border-bottom: 2px solid red ;
   background-color: transparent;
+  caret-color: red;
+
 }
 
 .search-bar:focus{
@@ -32,6 +36,22 @@
   padding: 8px;
 }
 
+
+.search-button:hover{
+  animation: red-blue-btn 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+@keyframes red-blue-btn {
+  0% {
+    filter:  drop-shadow(0 0 0 rgb(0, 0, 0))
+    drop-shadow(0 0 0 rgb(0, 0, 0));
+  }
+  100% {
+    filter: drop-shadow(5px 5px 0 rgb(255, 0, 0))
+    drop-shadow(-5px -5px 0 rgb(0, 30, 255)) ;
+  }
+}
 /* @keyframes activesearch {
   0% {
     border: 1px solid red;
