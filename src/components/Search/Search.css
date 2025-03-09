@@ -5,16 +5,44 @@
 }
 
 .search-bar{
+  border: 0px;
   padding: 10px;
   margin-right: 10px;
-  background-color: none;
-  border: 1px solid red;
-  border-right: 0px;
-  border-left: 0px;
-  border-top: 0px;
-  background-color: rgba(240, 248, 255, 0);
+  border-bottom: 2px solid red ;
+  background-color: transparent;
+}
+
+.search-bar:focus{
+  padding: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid rgb(160, 6, 6) ;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-bar:not(:focus){
+  padding: 10px;
+  margin-right: 10px;
+  border-bottom: 2px solid red ;
+  background-color: transparent;
+  outline: none;
 }
 
 .search-button{
   padding: 8px;
 }
+
+/* @keyframes activesearch {
+  0% {
+    border: 1px solid red;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+
+  }
+  100% {
+    border-right: 2px;
+    border-left: 2px;
+    border-top: 2px;
+  }
+} */
