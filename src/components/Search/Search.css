@@ -6,13 +6,15 @@
 }
 
 .search-bar{
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Major Mono Display", serif;
   border: 0px;
+  font-size: 14px;
   padding: 10px;
   margin-right: 10px;
   border-bottom: 2px solid red ;
   background-color: transparent;
   caret-color: red;
+
 
 }
 
@@ -22,6 +24,7 @@
   border-bottom: 2px solid rgb(160, 6, 6) ;
   background-color: transparent;
   outline: none;
+  transition: ease-in-out;
 }
 
 .search-bar:not(:focus){
