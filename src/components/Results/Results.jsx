@@ -24,10 +24,10 @@ const Results = (props) => {
         modal
         closeOnDocumentClick
         contentStyle={{
-          background: "black",
           padding: "10px",
-          borderRadius: "10px",
-          boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+          // borderRadius: "px",
+          boxShadow: "0 5px 15px rgba(255, 0, 0, 0.3)",
+          border: "2px solid red",
           textAlign: "center",
           maxWidth: "800px",
           width: "90%", 

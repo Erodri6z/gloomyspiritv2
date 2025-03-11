@@ -2,6 +2,10 @@
   animation: slit-in-horizontal 0.45s ease-out both;
 }
 
+.popup-content{
+  background-image: linear-gradient(to top, #3a0004, #2e0308, #240309, #170206, #000000);
+}
+
 .recipe{
   display: flex;
   flex-direction: column;
