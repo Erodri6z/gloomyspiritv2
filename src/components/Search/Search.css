@@ -14,17 +14,19 @@
   border-bottom: 2px solid red ;
   background-color: transparent;
   caret-color: red;
-
+  width: 50px;
 
 }
 
 .search-bar:focus{
   padding: 10px;
   margin-right: 10px;
-  border-bottom: 2px solid rgb(160, 6, 6) ;
+  border-bottom: 2px solid rgb(255, 0, 0) ;
   background-color: transparent;
   outline: none;
   transition: ease-in-out;
+  width: 400px;
+  animation: activesearch 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both ;
 }
 
 .search-bar:not(:focus){
@@ -33,6 +35,7 @@
   border-bottom: 2px solid red ;
   background-color: transparent;
   outline: none;
+  animation: inactivesearch 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both ;
 }
 
 .search-button{
@@ -56,17 +59,21 @@
     drop-shadow(-5px -5px 0 rgb(0, 30, 255)) ;
   }
 }
-/* @keyframes activesearch {
-  0% {
-    border: 1px solid red;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 0px;
 
+
+@keyframes activesearch {
+  0% {
+    width: 40px;
   }
   100% {
-    border-right: 2px;
-    border-left: 2px;
-    border-top: 2px;
+    width: 300px;
   }
-} */
+}
+@keyframes inactivesearch {
+  0% {
+    width: 300px;
+  }
+  100% {
+    width: 40px;
+  }
+}
