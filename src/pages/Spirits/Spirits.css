@@ -20,7 +20,11 @@
 .show{
   animation: fade-in-fwd 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
 }
+.spirit{
+  /* filter: grayscale(90%); */
+  animation: double-vision 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
 
+}
 @keyframes fade-in-fwd {
   0% {
     transform: translateZ(-80px);
@@ -29,5 +33,22 @@
   100% {
     transform: translateZ(0);
     opacity: 1;
+  }
+}
+
+@keyframes double-vision {
+  0% {
+    filter:  drop-shadow(0 0 0 rgb(0, 0, 0))
+    drop-shadow(0 0 0 rgb(0, 0, 0))
+    /* grayscale(10%); */
+  }
+  50% {
+    filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
+    drop-shadow(-10px -10px 0 rgb(0, 30, 255)) 
+    /* grayscale(90%); */
+  }
+  100% {
+    filter: drop-shadow(-10px -10px 0 rgb(255, 0, 0))
+    drop-shadow(10px 10px 0 rgb(0, 30, 255)) 
   }
 }

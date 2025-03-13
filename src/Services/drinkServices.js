@@ -27,6 +27,7 @@ async function GetByAlc(alc) {
 async function SearchDrink(n) {
   try {
     const res = await fetch(`${BASE_URL}/drinks/byName/${n}`)
+    // console.log(await res.json())
     return await res.json()
   } catch (err) {
     throw err

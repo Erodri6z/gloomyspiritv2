@@ -12,7 +12,7 @@ const Search = (props) => {
   }
 
 
-  const handleSearch = (e) => {
+  const handleS = (e) => {
     e.preventDefault()
     try{
       props.handleSearch(searchData.search)
@@ -22,7 +22,7 @@ const Search = (props) => {
   }
   return (
     <div className="search-form">
-      <form onSubmit={handleSearch}>
+      <form onSubmit={handleS}>
         <input type="text" name="search" autoComplete="off" className="search-bar" onChange={handleChange} />
         <button className="search-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
