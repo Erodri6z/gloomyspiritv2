@@ -3,10 +3,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 10px; */
   width: 90vw;
   height: 100dvh;
-  /* background-color: gray; */
 }
 .desc{
   padding: 50px;
@@ -21,7 +19,6 @@
   animation: fade-in-fwd 1.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) .5s both;
 }
 .spirit{
-  /* filter: grayscale(90%); */
   animation: double-vision 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
 
 }
@@ -40,12 +37,11 @@
   0% {
     filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
     drop-shadow(-10px -10px 0 rgb(0, 30, 255)) 
-    /* grayscale(10%); */
   }
   25% {
     filter: drop-shadow(10px 10px 0 rgb(255, 0, 0))
     drop-shadow(-10px -10px 0 rgb(0, 30, 255)) 
-    /* grayscale(90%); */
+
   }
   50% {
     filter: drop-shadow(-10px -10px 0 rgb(255, 0, 0))
